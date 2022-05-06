@@ -62,3 +62,10 @@ typings/
 
 # next.js build output
 .next
+.idea/vcs.xml
+.idea/unidays-node.iml
+.idea/modules.xml
+.idea/jsLibraryMappings.xml
+.idea/codeStyles/Project.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/aws.xml
