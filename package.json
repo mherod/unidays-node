@@ -7,12 +7,19 @@
   "module": "dist/module.js",
   "scripts": {
     "build": "parcel build",
+    "prepare": "npm run build",
     "test": "node ./node_modules/mocha/bin/mocha",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "standard": "standard index.js lib/**"
   },
   "author": "UNiDAYS / unofficial fork by Matthew Herod",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
   "devDependencies": {
     "ava": "^3.15.0",
     "co-exec": "^1.1.0",
