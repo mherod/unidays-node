@@ -1,37 +1,39 @@
 {
-  "name": "@mherod/unidays-node",
-  "version": "1.0.25",
-  "description": "This is the NodeJS library for integrating with UNiDAYS. This is to be used for coded and codeless integrations. The following documentation provides descriptions of the implementations and examples.",
-  "source": "index.js",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "scripts": {
-    "build": "parcel build",
-    "prepare": "npm run build",
-    "test": "node ./node_modules/mocha/bin/mocha",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "standard": "standard index.js lib/**"
-  },
-  "author": "UNiDAYS / unofficial fork by Matthew Herod",
-  "license": "ISC",
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">= 16"
-  },
-  "devDependencies": {
-    "ava": "^3.15.0",
-    "co-exec": "^1.1.0",
-    "codecov": "^3.7.1",
-    "fetch-mock": "^7.7.3",
-    "ghooks": "^2.0.4",
-    "mocha": "^7.2.0",
-    "nyc": "^15.1.0",
-    "parcel": "^2.7.0",
-    "standard": "^14.3.4"
-  },
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  }
+    "name": "@mherod/unidays-node",
+    "version": "1.0.25",
+    "description": "This is the NodeJS library for integrating with UNiDAYS. This is to be used for coded and codeless integrations. The following documentation provides descriptions of the implementations and examples.",
+    "source": "index.js",
+    "main": "dist/main.js",
+    "module": "dist/module.js",
+    "scripts": {
+        "build": "parcel build",
+        "prepare": "npm run build",
+        "test": "node ./node_modules/mocha/bin/mocha",
+        "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+        "standard": "standard index.js lib/**",
+        "prettier": "prettier --write 'lib/*.{json,js}'"
+    },
+    "author": "UNiDAYS / unofficial fork by Matthew Herod",
+    "license": "ISC",
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">= 16"
+    },
+    "devDependencies": {
+        "ava": "^3.15.0",
+        "co-exec": "^1.1.0",
+        "codecov": "^3.7.1",
+        "fetch-mock": "^7.7.3",
+        "ghooks": "^2.0.4",
+        "mocha": "^7.2.0",
+        "nyc": "^15.1.0",
+        "parcel": "^2.7.0",
+        "prettier": "^2.7.1",
+        "standard": "^14.3.4"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.1"
+    }
 }
