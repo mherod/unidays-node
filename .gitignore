@@ -69,3 +69,7 @@ typings/
 .idea/codeStyles/Project.xml
 .idea/codeStyles/codeStyleConfig.xml
 .idea/aws.xml
+.idea/sonarlint
+
+.parcel-cache
+dist
